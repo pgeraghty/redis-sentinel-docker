@@ -81,6 +81,10 @@ if [ "$MASTER_NAME" ]; then
             fi
         done
     fi
+
+    if [ "$REQUIRE_PASS" ]; then
+        echo "requirepass \"$REQUIRE_PASS\"" >> $SENTINEL_CONFIGURATION_FILE
+    fi
 fi
 
 exec redis-server $SENTINEL_CONFIGURATION_FILE --sentinel
