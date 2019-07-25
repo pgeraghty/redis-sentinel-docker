@@ -79,3 +79,5 @@ Environment Variables
 `AWS_IP_DISCOVERY` - Use internal IP address of AWS EC2 machine as `ANNOUNCE_IP`.
 
 `AUTH_PASS` - Authentication password to use when connecting to master.
+
+`REQUIRE_PASS` - Authentication password to use when connecting to sentinel(s). Redis >= 5.0.1 only.
